@@ -3,11 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
-    <title>BMI Calculator</title>
+    <title>BMI Calculator</title> 
 </head>
 <body>
-    
+    <div class="container">
+        <div id="calc-container">
+            <h2>BMI Calculator</h2>
+            <form class="imc-form">
+                <div class="form-inputs">
+                    <div class="form-control">
+                        <label for="height">Height:</label>
+                        <input type="text" name="height" id="height" placeholder="Example 1,75">
+                    </div>
+                    <div class="form-control">
+                        <label for="weigth">Weigth:</label>
+                        <input type="text" name="weigth" id="weigth" placeholder="Example 70,5">
+                    </div>
+                </div>
+                <div class="action-control">
+                    <button id="calc-btn">Calculator</button>
+                    <button id="clear-btn">Clear</button>
+                </div>
+            </form>
+        </div>
+        <div id="result-container" class="hide">
+            <p id="imc-number">Your BMI: <span></span></p>
+            <p id="imc-info">Current situation: <span></span></p>
+            <h3>Check out the ratings:</h3>
+            <div id="imc-table">
+                <div class="table-header">
+                    <h4>BMI</h4>
+                    <h4>Classification</h4>
+                    <h4>Obesity</h4>
+                </div>
+            </div>
+            <button id="back-tn">Back</button>
+        </div>
+    </div>
 </body>
 </html>
