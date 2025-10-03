@@ -22,7 +22,8 @@ This project was developed to practice DOM manipulation and basic logic.
 ---
 
 ## 📸 Preview
-(Add a screenshot or GIF of your project here)
+<img width="559" height="530" alt="image" src="https://github.com/user-attachments/assets/c2a47bfb-976e-48f1-83c9-7a1c6eefb254" />
+https://gabrielofaria.github.io/bmi-calculator/
 
 ---
 
